@@ -158,9 +158,9 @@ export const DonutChartGenerator = (uiConfig = DEFAULT_CONFIG_DONUT) => {
     ? functions.mergeProps
     : DEFAULT_CONFIG_DONUT.functions.mergeProps;
 
-  const lastIndex = functions && typeof functions.getLastIndex === 'function'
-    ? functions.getLastIndex
-    : DEFAULT_CONFIG_DONUT.functions.getLastIndex;
+  // const lastIndex = functions && typeof functions.getLastIndex === 'function'
+  //   ? functions.getLastIndex
+  //   : DEFAULT_CONFIG_DONUT.functions.getLastIndex;
 
   const mapDataset = functions && typeof functions.mapData === 'function'
     ? functions.mapDatasetObject
@@ -181,13 +181,13 @@ export const DonutChartGenerator = (uiConfig = DEFAULT_CONFIG_DONUT) => {
       const dataset = data.map(mapDataset);
       const totalCount = dataset.length || 0;
 
-      const [activeIndex, setActiveIndex] = useState(lastIndex(data));
+      const [activeIndex, setActiveIndex] = useState(0);
       const refHook = useRef(data);
 
       useEffect(() => {
         if (isEqual(refHook.current, data) === false) {
           refHook.current = data;
-          setActiveIndex(lastIndex(data));
+          setActiveIndex(0);
         }
       }, [data]);
 
