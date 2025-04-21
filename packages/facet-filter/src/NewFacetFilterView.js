@@ -2,63 +2,51 @@
 /* eslint-disable padded-blocks */
 import React from 'react';
 import {
-  Divider,
   List,
   withStyles,
 } from '@material-ui/core';
 import styles from './FacetFilterStyle';
-import FacetSectionView from './components/section/FacetSectionView';
-import FacetView from './components/facet/ReduxFacetView';
+import NewFacetView from './components/facet/ReduxNewFacetView';
 import FilterItems from './components/inputs/FilterItems';
-import SearchFacetView from './components/facet/ReduxSearchFacetView';
+import NewSearchFacetView from './components/facet/ReduxNewSearchFacetView';
 
 const BentoFacetFilter = ({
-  sideBarSections,
+  facetSection,
   CustomFacetSection,
   CustomFacetView,
   queryParams,
 }) => {
   return (
     <>
-      {
-        sideBarSections.map((section, index) => (
-          <>
-            <Divider
-              variant="middle"
-              className={`divider${index}`}
+      { CustomFacetSection && (
+        <>
+          <CustomFacetSection section={facetSection} expanded />
+        </>
+      )}
+      {facetSection.items.map((facet) => {
+        if (facet.search) {
+          return (
+            <NewSearchFacetView
+              facet={facet}
+              queryParams={queryParams}
+              CustomView={CustomFacetView}
             />
-            <FacetSectionView
-              section={section}
-              CustomSection={CustomFacetSection}
-            >
-              {section.items.map((facet) => {
-                if (facet.search) {
-                  return (
-                    <SearchFacetView
-                      facet={facet}
-                      queryParams={queryParams}
-                      CustomView={CustomFacetView}
-                    />
-                  );
-                }
-                return (
-                  <FacetView
-                    facet={facet}
-                    queryParams={queryParams}
-                    CustomView={CustomFacetView}
-                  >
-                    <List className={`List_${facet.label}`}>
-                      <FilterItems
-                        facet={facet}
-                      />
-                    </List>
-                  </FacetView>
-                );
-              })}
-            </FacetSectionView>
-          </>
-        ))
-      }
+          );
+        }
+        return (
+          <NewFacetView
+            facet={facet}
+            queryParams={queryParams}
+            CustomView={CustomFacetView}
+          >
+            <List className={`List_${facet.label}`}>
+              <FilterItems
+                facet={facet}
+              />
+            </List>
+          </NewFacetView>
+        );
+      })}
     </>
   );
 };

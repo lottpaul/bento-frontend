@@ -25,6 +25,7 @@ const NewFacetFilterController = (props) => {
     data,
     facetsConfig,
     facetSectionConfig,
+    selectedSection,
   } = props;
 
   const filterState = {};
@@ -159,12 +160,13 @@ const NewFacetFilterController = (props) => {
   const facetStates = addFacetValues(displayFacets);
   const updateState = updateFacetState(facetStates);
   const facetSections = arrangeBySections(updateState);
+  const facetSection = facetSections[selectedSection];
 
   return (
     <>
       <NewBentoFacetFilter
         {...props}
-        sideBarSections={facetSections}
+        facetSection={facetSection}
       />
     </>
   );
