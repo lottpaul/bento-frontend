@@ -4,9 +4,9 @@ import env from '../utils/env';
 export default {
   // footerLogoImage: 'https://raw.githubusercontent.com/cbiit/datacommons-assets/main/bento/images/icons/png/footerlogo.png',
   // footerLogoAltText: 'Footer Logo',
-  footerLogoText: 'National Cancer Institute',
-  footerLogoSubText: 'at the National Institutes of Health',
-  footerLogoHyperlink: 'https://cancer.gov/',
+  footerLogoText: 'UCaMP and UCaTS Data Commons',
+  footerLogoSubText: 'at UCDavis PDX Bioinformatics Core',
+  footerLogoHyperlink: 'https://ucdavis.gov/',
   version: env.REACT_APP_FE_VERSION,
   BEversion: env.REACT_APP_BE_VERSION,
   // A maximum of 3 Subsections (link_sections) are allowed
@@ -18,8 +18,8 @@ export default {
       title: 'Contact Information',
       items: [
         {
-          text: 'Bento Help Desk',
-          link: 'bento-help@nih.gov',
+          text: 'UCD PDX Bioinformatics Help Desk',
+          link: 'plott@ucdavis.edu',
         },
       ],
     },
@@ -32,7 +32,7 @@ export default {
           link: 'https://bento-tools.org/',
         },
         {
-          text: 'Bento Documentation',
+          text: 'UCDavis PDX Bioinformatics Documentation',
           link: 'https://cbiit.github.io/bento-docs/master/index.html',
         },
       ],
@@ -47,10 +47,10 @@ export default {
           link: 'https://github.com/CBIIT/bento-frontend/releases',
         },
         {
-          text: `FE Version: ${env.REACT_APP_FE_VERSION || '0.0.0'}`,
+          text: `FE Version: 3.8.0.45'}`,
         },
         {
-          text: 'BE Version: 0.0.0',
+          text: 'BE Version: 4.7.0.144',
         },
         {
           text: 'System Info Page',
@@ -70,33 +70,21 @@ export default {
           text: 'Accessibility',
           link: 'https://www.cancer.gov/policies/accessibility',
         },
-        {
-          text: 'FOIA',
-          link: 'https://www.cancer.gov/policies/foia',
-        },
-        {
-          text: 'HHS Vulnerability Disclosure',
-          link: 'https://www.hhs.gov/vulnerability-disclosure-policy/index.html',
-        },
       ],
     },
   ],
   global_footer_links: [
     {
-      text: 'U.S. Department of Health and Human Services',
-      link: 'https://www.hhs.gov',
+      text: 'UC Davis Genome Center',
+      link: 'https://genomecenter.ucdavis.edu/',
     },
     {
-      text: 'National Institutes of Health',
-      link: 'https://www.nih.gov',
+      text: 'UC Davis Health Cancer Center',
+      link: 'https://health.ucdavis.edu/cancer',
     },
     {
-      text: 'National Cancer Institute',
+      text: 'University of Texas at Southwestern',
       link: 'https://www.cancer.gov',
-    },
-    {
-      text: 'USA.gov',
-      link: 'https://www.usa.gov',
-    },
+    }
   ],
 };

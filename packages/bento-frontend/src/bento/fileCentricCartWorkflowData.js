@@ -19,7 +19,7 @@ export const tooltipContent = {
   icon: 'https://raw.githubusercontent.com/google/material-design-icons/master/src/action/help/materialicons/24px.svg',
   alt: 'tooltipIcon',
   clsName: 'tooltip_icon',
-  myFiles: 'To access and analyze files: select and remove unwanted files,  click the “Download Manifest” button, and upload the resulting Manifest file to your Seven Bridges Genomics account.',
+  myFiles: 'To access and analyze files: select and remove unwanted files,  click the “Download Manifest” button. You can then download the files using xxxx script or via SFTP',
   arrow: true,
   styles: {
     border: '#03A383 1px solid',
@@ -28,10 +28,10 @@ export const tooltipContent = {
 
 //BENTO-2455 Configuration set for Bento 4.0.
 export const myFilesPageData = {
-  manifestFileName: 'BENTO File Manifest',
+  manifestFileName: 'UC_PDX_File_Manifest_',
   tooltipIcon: 'https://raw.githubusercontent.com/google/material-design-icons/master/src/action/help/materialicons/24px.svg',
   tooltipAlt: 'tooltip icon',
-  tooltipMessage: 'To access and analyze files: select and remove unwanted files,  click the “Download Manifest” button, and upload the resulting Manifest file to your Seven Bridges Genomics account.',
+  tooltipMessage: 'To access and analyze files: select and remove unwanted files,  click the “Download Manifest” button. You can then download the files using xxxx script or via SFTP',
   errorMessage: 'An error has occurred in loading CART',
   layout: [
     {
@@ -43,7 +43,7 @@ export const myFilesPageData = {
           clsName: 'cart_icon',
           type: types.ICON,
           src: 'https://raw.githubusercontent.com/CBIIT/datacommons-assets/main/bento/images/icons/svgs/Icon-Cart-Workflow.svg',
-          alt: 'Bento MyFiles header logo',
+          alt: 'UCD PDX MyFiles header logo',
         },
         {
           clsName: 'cart_header_text',

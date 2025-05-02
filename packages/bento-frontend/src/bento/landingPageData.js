@@ -5,8 +5,8 @@ import gql from 'graphql-tag';
 // Tile1 Tile2 Tile3 images 293x349 px
 // Tile4 image optimum size 600x 436 px
 export const landingPageData = {
-  callToActionTitle: 'Explore, Analyze, Visualize Clinical Trial Data Sets',
-  callToActionDescription: 'Model, Store and Share your Data Sets using the Bento Framework for Data Sharing Platforms.',
+  callToActionTitle: 'Store, Explore, Analyze, Visualize UCD PDX Bioinformatics Core Data Sets',
+  callToActionDescription: 'Model, Store and Share your Tissue, PDX, Organoid, and oPDX Data Sets.',
   callToActionButtonText: 'EXPLORE THE SITE',
   callToActionLink: '/explore',
   landingPageHero: {
@@ -19,7 +19,7 @@ export const landingPageData = {
       statAPI: 'numberOfPrograms',
     },
     {
-      statTitle: 'Arms',
+      statTitle: 'Studies',
       statAPI: 'numberOfStudies',
     },
     {
@@ -27,19 +27,19 @@ export const landingPageData = {
       statAPI: 'numberOfSubjects',
     },
     {
-      statTitle: 'samples',
+      statTitle: 'Samples',
       statAPI: 'numberOfSamples',
     },
     {
-      statTitle: 'files',
+      statTitle: 'Files',
       statAPI: 'numberOfFiles',
     },
   ],
   tile1: {
     alt: '',
     img: 'https://raw.githubusercontent.com/CBIIT/datacommons-assets/main/bento/images/icons/png/landing_tileAbout.png',
-    titleText: 'The Bento Framework',
-    descriptionText: 'Effective data management is key to scientific discovery. Bento is an open source framework, developed by the Frederick National Laboratory for Cancer Research, to support the creation of data sharing platforms, that adhere to the FAIR principles of scientific data management.',
+    titleText: 'UCDavis PDX Data Commons',
+    descriptionText: 'Effective data management is key to scientific discovery. The UCD PDX Bioinformatics Core Data Commons was designed to house data generated from our PDX models and functions as central data resource for UC PDX Researchers to store, analyze, visualize, and query data they have generated from important cancer models.',
     callToActionText: 'Read More',
     callToActionLink: '/bento', // This links to the "About" static page.
   },
@@ -47,7 +47,7 @@ export const landingPageData = {
     alt: '',
     img: 'https://raw.githubusercontent.com/CBIIT/datacommons-assets/main/bento/images/icons/png/landing_tileProgam.png',
     titleText: 'Programs',
-    descriptionText: 'Access data from the TAILORx clinical trial, on this data sharing platform, built on Bento.',
+    descriptionText: 'Access data from the UCDavis Minority-Derived PDX Developement and Trial Center (UCAMP) and University of California and University of Texas Southwestern (UCaTS) projects, on this data sharing platform',
     callToActionText: 'View',
     callToActionLink: '/programs', // This links to the Programs Listing Page.
   },
@@ -55,7 +55,7 @@ export const landingPageData = {
     alt: '',
     img: 'https://raw.githubusercontent.com/CBIIT/datacommons-assets/main/bento/images/icons/png/landing_tileAnalytics.png',
     titleText: 'Resources',
-    descriptionText: 'Use Bento to build your own data sharing platform.',
+    descriptionText: 'Use the UCD PDX Data Commons APIs and GraphQL queries to accelerate your research. Learn how you can link to them directly from your programs, scripts, and analysis frameworks.',
     callToActionText: 'Read More',
     callToActionLink: '/resources', // Link to the "Resources" Static Page
   },
@@ -63,7 +63,7 @@ export const landingPageData = {
     alt: '',
     img: 'https://raw.githubusercontent.com/CBIIT/datacommons-assets/main/bento/images/icons/png/landing_tileCases.png',
     titleText: 'Cases',
-    descriptionText: 'Analyze cases from the TAILORx clinical trial.',
+    descriptionText: 'Analyze PDX Cancer Models generated at University of California and University of Texas Southwestern (UCaTS)',
     callToActionText: 'Explore',
     callToActionLink: '/explore', // This links to the cases dashboard.
   },

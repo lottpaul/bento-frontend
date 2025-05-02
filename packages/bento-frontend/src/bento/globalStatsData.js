@@ -56,7 +56,7 @@ export const globalStatsData = [
     statIconAlt: 'Data Volume Stats Bar Icon',
   },
   {
-    statTitle: 'Arms',
+    statTitle: 'Studies',
     type: 'field',
     statAPI: 'numberOfStudies',
     statIconSrc: 'https://raw.githubusercontent.com/CBIIT/datacommons-assets/main/bento/images/icons/svgs/Arms.svg',
