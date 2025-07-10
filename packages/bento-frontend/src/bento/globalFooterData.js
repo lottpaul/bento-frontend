@@ -47,7 +47,7 @@ export default {
           link: 'https://github.com/CBIIT/bento-frontend/releases',
         },
         {
-          text: `FE Version: 3.8.0.45'}`,
+          text: `FE Version: 3.8.0.45`,
         },
         {
           text: 'BE Version: 4.7.0.144',

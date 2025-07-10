@@ -26,8 +26,9 @@ export const tooltipContent = {
   },
 };
 
-//BENTO-2455 Configuration set for Bento 4.0.
+
 export const myFilesPageData = {
+  downButtonText: "DOWNLOAD MANIFEST",
   manifestFileName: 'UC_PDX_File_Manifest_',
   tooltipIcon: 'https://raw.githubusercontent.com/google/material-design-icons/master/src/action/help/materialicons/24px.svg',
   tooltipAlt: 'tooltip icon',
